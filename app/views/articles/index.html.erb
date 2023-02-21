@@ -1,4 +1,4 @@
-<h1>All the articles</h1>
+<h1>All the articles</h1> <h1><%= link_to "+", new_article_path, style:"text-decoration:none; color:black" %></h1>
 
 <% @articles.each do |article| %>
   <%= link_to article_path(article) do %>
