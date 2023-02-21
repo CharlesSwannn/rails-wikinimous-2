@@ -1,5 +1,11 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
-<p><%= link_to "<", articles_path, style:"text-decoration:none; color:black" %></p>
-<%= link_to  "editar esta merda de artigo", edit_article_path, style:"text-decoration:none; color:black" %>
+<p>
+  <%= link_to articles_path do %>
+    <i class="fa-solid fa-arrow-left"></i>
+  <% end %>
+</p>
+<%= link_to (edit_article_path) do %>
+  <i class="fa-solid fa-pencil"></i>
+<% end %>
